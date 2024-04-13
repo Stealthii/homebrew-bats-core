@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        package: [bats-support, bats-assert, bats-detik, bats-file]
+        package: [bats-support, bats-assert, bats-detik, bats-file, bats-mock]
     runs-on: macos-latest
     env:
       PACKAGE: ${{ matrix.package }}
